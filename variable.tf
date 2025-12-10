@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a5f313647ddc43d9db783fdcbd37efc601663a265001f7bd177c56bb8ed23ed
-size 328
+variable "ec2_instance_type" {
+
+  default = "t3.micro"
+  type    = string
+
+}
+
+variable "ec2_default_root_storage_size" {
+
+  default = 10
+  type    = number
+
+}
+
+variable "ec2_ami_id" {
+  default = "ami-0f5fcdfbd140e4ab7"
+  type    = string
+
+}
+
+variable "env" {
+    default = "prd"
+    type = string
+
+  
+}
